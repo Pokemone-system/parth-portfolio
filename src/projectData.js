@@ -48,6 +48,14 @@ const projects = [
     tools: ["C#", "Android", "Unity Studio", "Google Ads"],
     github: "https://github.com/p-chotaliya/",
   },
+  {
+    title: "Web Search Engine",
+    image: "./images/SmartAssess.jpg",
+    description:
+      "Developed console-based application using concepts studied in advanced computing concepts subject including implementation of more than five algorithms. Utilized java as a programming language to provide word recognition and suggestion functions.",
+    tools: ["JAVA", "Spring", "Eclips", "Spring Boot"],
+    github: "https://github.com/p-chotaliya/",
+  },
 ];
 
 export default projects;

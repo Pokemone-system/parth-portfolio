@@ -20,64 +20,67 @@ const Header = () => {
           <div className="w-6 h-0.5 bg-white mb-1"></div>
           <div className="w-6 h-0.5 bg-white"></div>
         </button>
-        <a
-          href={Parth_resume}
-          download="Parth-Resume"
-          target="_blank"
-          rel="noreferrer"
-          className="py-1 px-5 hover:bg-gray focus:bg-gray rounded-lg text-lg border border-black glow"
-        >
-          Resume
-        </a>
+
+        {!menuOpen ? (
+          <a
+            href={Parth_resume}
+            download="Parth-Resume"
+            target="_blank"
+            rel="noreferrer"
+            className="py-1 px-5 hover:bg-gray focus:bg-gray rounded-lg text-lg border border-black glow"
+          >
+            Resume
+          </a>
+        ) : null}
       </div>
       <ul
         className={`${
           menuOpen ? "block" : "hidden"
         } md:flex md:flex-row space-x-4 md:space-x-10 md:text-xl justify-center md:justify-center text-center`}
       >
-        <li className="md:mx-auto my-10 ">
+        <li className="my-6 md:my-0  ">
           <a
             href="#Experience"
             onClick={closeMenu}
-            className="py-2 px-6 md:px-5 hover:bg-gray focus:bg-gray rounded-lg text-lg font-bold"
+            className="py-1 px-5 hover:bg-gray focus:bg-gray rounded-lg"
           >
             Experience
           </a>
         </li>
-        <li className="md:mx-auto my-10">
+        <li className="my-6 md:my-0  ">
           <a
             href="#Projects"
             onClick={closeMenu}
-            className="py-2 px-6 md:px-5 hover:bg-gray focus:bg-gray rounded-lg text-lg font-bold"
+            className="py-1 px-5 hover:bg-gray focus:bg-gray rounded-lg"
           >
             Projects
           </a>
         </li>
-        <li className="md:mx-auto my-10">
+        <li className="my-6 md:my-0  ">
           <a
             href="#Skill"
             onClick={closeMenu}
-            className="py-2 px-6 md:px-5 hover:bg-gray focus:bg-gray rounded-lg text-lg font-bold"
+            className="py-1 px-5 hover:bg-gray focus:bg-gray rounded-lg"
           >
             Skill
           </a>
         </li>
-        <li className="md:mx-auto my-10">
+        <li className="my-6 md:my-0  ">
           <a
             href="#contact"
             onClick={closeMenu}
-            className="py-2 px-6 md:px-5 hover:bg-gray focus:bg-gray rounded-lg text-lg font-bold"
+            className="py-1 px-5 hover:bg-gray focus:bg-gray rounded-lg"
           >
             Contact
           </a>
         </li>
-        <li className="md:mx-auto my-10">
+        <li className="my-6 md:my-0  ">
           <a
             href={Parth_resume}
             download="Parth-Resume"
             target="_blank"
             rel="noreferrer"
-            className="py-2 px-6 md:px-5 hover:bg-gray focus:bg-gray rounded-lg text-lg font-bold glow"
+            className="py-1 px-5 hover:bg-gray focus:bg-gray rounded-lg glow"
           >
             Resume
           </a>
