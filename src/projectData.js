@@ -19,17 +19,34 @@ const projects = [
     title: "AR Application",
     image: "./images/AR.jpg",
     description:
-      "THis Augmented Reality Facial Landmark Application, developed using Python and OpenGL, leverages facial landmark detection to superimpose virtual glasses models onto human faces. By utilizing cutting-edge technologies, we have created a seamless and interactive experience that allows users to visualize how different spectacles look on their own faces. The project was successfully presented with a comprehensive demo to a distinguished panel of professors and department members, showcasing its technical prowess and potential applications.",
+      "THis Augmented Reality Facial Landmark Application, developed using Python and OpenGL, leverages facial landmark detection to superimpose virtual glasses models onto human faces. By utilizing cutting-edge technologies, we have created a seamless and interactive experience that allows users to visualize how different spectacles look on their own faces.",
     tools: ["Python", "OpenGL"],
     github: "https://github.com/p-chotaliya/AR-App-Python",
   },
   {
-    title: "Smart Assessment System",
+    title: "E-Commerce WebApp",
     image: "./images/SmartAssess.jpg",
     description:
-      "This web-based application revolutionizes the student assessment process, incorporating an intuitive Admin dashboard for monitoring and assessing student submissions. Powered by Node.js, Express, MySQL, and Angular, this robust system features seamless integration of backend APIs and a user-friendly UI. Experience efficient assessment management and enhanced student evaluation in this cutting-edge application.",
-    tools: ["Angular", "Node Js", "HTML", "Mongodb", "CSS"],
+      "I developed an e-commerce website, 'Just Natural Paws,' using React.js and Node.js, with Firebase for data integration. The site is successfully deployed on a Digital Ocean server, demonstrating my full-stack development skills and enhancing the company's online presence.",
+    tools: [
+      "React Js",
+      "Node Js",
+      "HTML",
+      "Firebase",
+      "Tailwind CSS",
+      "Javascript",
+      "FireStore",
+    ],
     github: "https://github.com/p-chotaliya/smartassessmenUI/tree/master",
+    link: "https://www.justnaturalpaws.org",
+  },
+  {
+    title: "Tripy Bird Android Game",
+    image: "./images/SmartAssess.jpg",
+    description:
+      "I designed and launched the 'Tripy Bird' Android game using C# and Unity Studio. This engaging game features integrated Google Ads, monetizing user interactions. 'Tripy Bird' is available for download on the Play Store, showcasing my game development expertise and successful deployment in the mobile gaming market.",
+    tools: ["C#", "Android", "Unity Studio", "Google Ads"],
+    github: "https://github.com/p-chotaliya/",
   },
 ];
 
