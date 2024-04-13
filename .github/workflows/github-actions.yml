@@ -1,0 +1,28 @@
+name: Pokémon Reward System
+
+on:
+  pull_request:
+    types: [opened, closed, reopened]
+  push:
+    branches-ignore:
+      - '*'
+
+jobs:
+  reward:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Send webhook to Zapier
+      uses: distributhor/http-request-action@v1
+      with:
+        url: ${{ secrets.ZAPIER_WEBHOOK_URL }}
+        method: POST
+        headers: |
+          Content-Type: application/json
+        body: |
+          {
+            "event_type": "${{ github.event_name }}",
+            "repository": "${{ github.repository }}",
+            "pull_request": "${{ github.event.pull_request }}",
+            "commit": "${{ github.sha }}"
+          }
